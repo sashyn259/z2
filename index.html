@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Интернет-магазин</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Задание 1 + 2 + 3: Навигационное меню -->
+  <header class="b1">
+    <div class="b2">
+      <img src="images/logo.png" alt="Логотип" class="b3" />
+      <nav class="b4">
+        <ul class="b5">
+          <li><a href="#" class="b6">Главная</a></li>
+          <li class="b7">
+            <a href="#" class="b6">Каталог</a>
+            <ul class="b8">
+              <li><a href="#" class="b9">Одежда</a></li>
+              <li><a href="#" class="b9">Обувь</a></li>
+              <li><a href="#" class="b9">Аксессуары</a></li>
+              <li><a href="#" class="b9">Спортинвентарь</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="b6">Акции</a></li>
+          <li><a href="#" class="b6">Доставка и оплата</a></li>
+          <li><a href="#" class="b6">Контакты</a></li>
+          <li><a href="#" class="b6">Корзина</a></li>
+        </ul>
+      </nav>
+      <input type="search" placeholder="Поиск..." class="b10" />
+      <div class="b11" onclick="alert('Меню открыто! (JS не используется, но для демонстрации)')">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- Задание 4: Форма поиска с фильтрами -->
+  <section class="b12">
+    <form class="b13">
+      <input type="text" placeholder="Название товара" class="b14" />
+      <select class="b14">
+        <option>Все категории</option>
+        <option>Одежда</option>
+        <option>Обувь</option>
+        <option>Аксессуары</option>
+      </select>
+      <div class="b15">
+        <label>Цена от:</label>
+        <input type="number" min="0" class="b16" />
+        <label>до:</label>
+        <input type="number" min="0" class="b16" />
+      </div>
+      <div class="b17">
+        <label><input type="checkbox" /> Новинки</label>
+        <label><input type="checkbox" /> Акции</label>
+        <label><input type="checkbox" /> В наличии</label>
+      </div>
+      <button type="submit" class="b18">Найти</button>
+    </form>
+  </section>
+
+  <!-- Задание 5: Карточки товаров -->
+  <section class="b19">
+    <div class="b20">
+      <div class="b21">
+        <img src="images/product1.jpg" alt="Товар 1" class="b22" />
+        <h3>Футболка</h3>
+        <p class="b23">1 200 ₽</p>
+        <div class="b24">★★★★☆</div>
+        <button class="b25">В корзину</button>
+        <button class="b26">Быстрый просмотр</button>
+      </div>
+      <!-- Повторяем ещё 5 карточек -->
+      <div class="b21">
+        <img src="images/product2.jpg" alt="Товар 2" class="b22" />
+        <h3>Кроссовки</h3>
+        <p class="b23">4 500 ₽</p>
+        <div class="b24">★★★★★</div>
+        <button class="b25">В корзину</button>
+        <button class="b26">Быстрый просмотр</button>
+      </div>
+      <div class="b21">
+        <img src="images/product3.jpg" alt="Товар 3" class="b22" />
+        <h3>Рюкзак</h3>
+        <p class="b23">2 800 ₽</p>
+        <div class="b24">★★★☆☆</div>
+        <button class="b25">В корзину</button>
+        <button class="b26">Быстрый просмотр</button>
+      </div>
+      <div class="b21">
+        <img src="images/product4.jpg" alt="Товар 4" class="b22" />
+        <h3>Шапка</h3>
+        <p class="b23">900 ₽</p>
+        <div class="b24">★★★★☆</div>
+        <button class="b25">В корзину</button>
+        <button class="b26">Быстрый просмотр</button>
+      </div>
+      <div class="b21">
+        <img src="images/product5.jpg" alt="Товар 5" class="b22" />
+        <h3>Перчатки</h3>
+        <p class="b23">600 ₽</p>
+        <div class="b24">★★★☆☆</div>
+        <button class="b25">В корзину</button>
+        <button class="b26">Быстрый просмотр</button>
+      </div>
+      <div class="b21">
+        <img src="images/product6.jpg" alt="Товар 6" class="b22" />
+        <h3>Футбольный мяч</h3>
+        <p class="b23">1 500 ₽</p>
+        <div class="b24">★★★★★</div>
+        <button class="b25">В корзину</button>
+        <button class="b26">Быстрый просмотр</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Задание 6: Футер -->
+  <footer class="b27">
+    <div class="b28">
+      <div class="b29">
+        <h4>О магазине</h4>
+        <ul>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Вакансии</a></li>
+          <li><a href="#">Партнёры</a></li>
+        </ul>
+      </div>
+      <div class="b29">
+        <h4>Помощь покупателю</h4>
+        <ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Возврат</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="b29">
+        <h4>Контакты</h4>
+        <p>г. Москва, ул. Тверская, 1</p>
+        <p>+7 (495) 123-45-67</p>
+        <p>info@shop.ru</p>
+      </div>
+      <div class="b29">
+        <h4>Социальные сети</h4>
+        <p>ВКонтакте | Telegram | Instagram</p>
+      </div>
+    </div>
+    <div class="b30">© 2026 Интернет-магазин. Все права защищены.</div>
+  </footer>
+
+  <!-- Задание 7: Контакты (на той же странице) -->
+  <section class="b31">
+    <h2>Контакты</h2>
+    <div class="b32">
+      <div class="b33">
+        <p>📍 г. Москва, ул. Тверская, 1</p>
+        <p>📞 +7 (495) 123-45-67</p>
+        <p>✉️ info@shop.ru</p>
+        <p>🕒 Пн–Пт: 9:00–20:00, Сб–Вс: 10:00–18:00</p>
+      </div>
+      <form class="b34">
+        <input type="text" placeholder="Ваше имя *" required class="b35" />
+        <input type="email" placeholder="Email *" required class="b35" />
+        <input type="text" placeholder="Тема" class="b35" />
+        <textarea placeholder="Сообщение" rows="4" class="b35"></textarea>
+        <button type="submit" class="b18">Отправить</button>
+      </form>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.435522745822!2d37.61773997633554!3d55.755826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5e5c4b4d0d%3A0x5e5a5a5a5a5a5a5a!2z0JHQsNC90LjRgQ!5e0!3m2!1sru!2sru!4v1700000000000!5m2!1sru!2sru" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Задание 8: Галерея -->
+  <section class="b36">
+    <h2>Галерея товаров</h2>
+    <div class="b37">
+      <img src="images/gallery1.jpg" alt="1" class="b38" />
+      <img src="images/gallery2.jpg" alt="2" class="b38" />
+      <img src="images/gallery3.jpg" alt="3" class="b38" />
+      <img src="images/gallery4.jpg" alt="4" class="b38" />
+      <img src="images/gallery5.jpg" alt="5" class="b38" />
+      <img src="images/gallery6.jpg" alt="6" class="b38" />
+      <img src="images/gallery7.jpg" alt="7" class="b38" />
+      <img src="images/gallery8.jpg" alt="8" class="b38" />
+    </div>
+  </section>
+
+  <!-- Задание 9: Корзина -->
+  <section class="b39">
+    <h2>Корзина</h2>
+    <table class="b40">
+      <thead>
+        <tr>
+          <th>Товар</th>
+          <th>Цена</th>
+          <th>Кол-во</th>
+          <th>Итого</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="images/product1.jpg" alt="Футболка" class="b41" /> Футболка</td>
+          <td>1 200 ₽</td>
+          <td><input type="number" value="1" min="1" class="b42" /></td>
+          <td>1 200 ₽</td>
+          <td><button class="b43">×</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="b44">
+      <p>Сумма заказа: <strong>1 200 ₽</strong></p>
+      <p>Доставка: <strong>300 ₽</strong></p>
+      <p>Итого: <strong>1 500 ₽</strong></p>
+      <input type="text" placeholder="Промокод" class="b45" />
+      <button class="b18">Оформить заказ</button>
+    </div>
+  </section>
+
+  <!-- Задание 10: Личный кабинет -->
+  <section class="b46">
+    <h2>Личный кабинет</h2>
+    <div class="b47">
+      <nav class="b48">
+        <ul>
+          <li><a href="#" class="b49 active">Профиль</a></li>
+          <li><a href="#" class="b49">Заказы</a></li>
+          <li><a href="#" class="b49">Избранное</a></li>
+          <li><a href="#" class="b49">Бонусы</a></li>
+          <li><a href="#" class="b49">Настройки</a></li>
+        </ul>
+      </nav>
+      <div class="b50">
+        <h3>Личная информация</h3>
+        <form class="b51">
+          <input type="text" placeholder="Имя" value="Иван" class="b35" />
+          <input type="email" placeholder="Email" value="ivan@example.com" class="b35" />
+          <button type="submit" class="b18">Сохранить</button>
+        </form>
+        <h3>История заказов</h3>
+        <table class="b40">
+          <tr><td>#1001</td><td>12.01.2026</td><td>Доставлен</td></tr>
+        </table>
+        <h3>Избранное</h3>
+        <div class="b20">
+          <div class="b21"><img src="images/product2.jpg" alt="Кроссовки" class="b22" /><p>Кроссовки</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
